@@ -29,7 +29,7 @@ const Header = () => {
           <div className="text-5xl md:text-7xl md:ml-6 font-semibold hero-title">Giuseppe Barbato</div>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-          <h3 className="hero-subtitle">Passionate Software Engineer</h3>
+          <h3 className="text-5xl md:text-7xl md:ml-6 font-semibold hero-subtitle">Passionate Software Engineer</h3>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
           <p className="hero-cta">

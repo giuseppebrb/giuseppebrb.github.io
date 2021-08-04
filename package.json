@@ -37,6 +37,7 @@
     "react-tilt": "^0.1.4"
   },
   "devDependencies": {
+    "autoprefixer": "^10.3.1",
     "babel-eslint": "^10.1.0",
     "eslint": "7.2.0",
     "eslint-config-airbnb": "^18.2.0",
@@ -46,9 +47,12 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
+    "gatsby-plugin-postcss": "^4.10.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5"
+    "postcss": "^8.3.6",
+    "prettier": "^2.0.5",
+    "tailwindcss": "^2.2.7"
   },
   "repository": {
     "type": "git",

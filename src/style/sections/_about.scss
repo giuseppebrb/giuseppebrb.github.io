@@ -5,7 +5,7 @@
     $primary 0%,
     $primary-dark 100%
   );
-  color: $white-color;
+  color: $text-primary;
   height: 100%;
   border-top: 0px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -60,7 +60,7 @@
         }
 
         &--important {
-          background: darken($secondary-color, 1%);
+          background: darken($primary-mid, 1%);
           display: inline-block;
           font-style: italic;
           padding: 0 0.3rem;

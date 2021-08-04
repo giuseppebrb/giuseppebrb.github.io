@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import BackgroundVideo from '../../images/bg.mp4';
+import ProfilePic from '../../images/profile_pic.jpg';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -26,6 +27,7 @@ const Header = () => {
     <section id="hero" className="jumbotron">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+          <img className="w-32 h-32 border profile-pic rounded-full mx-auto" src={ProfilePic} alt="Giuseppe Barbato" />
           <div className="text-5xl md:text-7xl md:ml-6 font-semibold hero-title">Giuseppe Barbato</div>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
@@ -33,11 +35,11 @@ const Header = () => {
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
           <p className="hero-cta">
-            <span className="cta-btn cta-btn--hero">
-              <Link to="about" smooth duration={1000}>
+            <Link to="about" smooth duration={1000}>
+              <span className="cta-btn cta-btn--hero">
                 {cta || 'Know more'}
-              </Link>
-            </span>
+              </span>
+            </Link>
           </p>
         </Fade>
       </Container>

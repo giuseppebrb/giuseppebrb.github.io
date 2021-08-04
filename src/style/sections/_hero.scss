@@ -4,9 +4,9 @@
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: $white-color;
+  background: linear-gradient(180deg, rgba(35,78,112,0.6) 0%, rgba(35,78,112,0.6) 75%, rgba(35,78,112,0) 100%);
   font-weight: 400;
-  color: $dark-blue-text;
+  color: white;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
   top: 0;
@@ -15,50 +15,66 @@
   right: 0;
   z-index: -1;
 
-  // If you want to set a background image on the hero section, uncomment these with yout custom image
-
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
-
   @include respond(phone) {
     padding: 0rem $default-font-size;
+
+
+  }
+  .background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
   }
 
   .hero-title {
-    font-size: 5.6rem;
+    font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 3.2rem;
-    text-align: left;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
 
     @include respond(tab-land) {
       font-size: 4rem;
     }
     @include respond(tab-port) {
-      font-size: 3.6rem;
+      font-size: 2.6rem;
       text-align: center;
     }
     @include respond(phone) {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       line-height: 1.5;
     }
     @include respond(phone-xs) {
-      font-size: 2.8rem;
+      font-size: 1.8rem;
     }
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
   }
 
   .hero-cta {
     display: flex;
+    justify-content: center;
 
     @include respond(tab-port) {
       justify-content: center;
     }
 
     & a {
-      font-size: 2.4rem;
+      font-size: 1rem;
 
       @include respond(phone) {
-        font-size: 2rem;
+        font-size: 1rem;
       }
     }
   }

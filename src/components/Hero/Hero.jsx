@@ -3,10 +3,11 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import BackgroundVideo from '../../images/bg.mp4';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -25,14 +26,12 @@ const Header = () => {
     <section id="hero" className="jumbotron">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <h1 className="hero-title">
-            {title || 'Hi, my name is'}{' '}
-            <span className="text-color-main">{name || 'Your Name'}</span>
-            <br />
-            {subtitle || "I'm the Unknown Developer."}
-          </h1>
+          <div className="text-5xl md:text-7xl md:ml-6 font-semibold hero-title">Giuseppe Barbato</div>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <h3 className="hero-subtitle">Passionate Software Engineer</h3>
+        </Fade>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
@@ -42,6 +41,10 @@ const Header = () => {
           </p>
         </Fade>
       </Container>
+      <video autoPlay muted loop playsInline className="fillWidth fadeIn animated background-video">
+        <source src={BackgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag. I suggest you upgrade your browser.
+      </video>
     </section>
   );
 };

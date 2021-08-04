@@ -24,11 +24,13 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         start_url: `/`,
+        name: 'giuseppebrb.github.io',
+        short_name: 'giuseppebrb',
         background_color: `#234E70`,
         theme_color: `#234E70`,
         display: `standalone`,
         icon: 'src/images/favicon.ico',
       },
-    },
+    }
   ],
 };

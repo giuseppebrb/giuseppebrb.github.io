@@ -24,7 +24,7 @@ const Header = () => {
     <section id="hero" className="jumbotron">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <img className="w-32 h-32 border profile-pic rounded-full mx-auto" src={ProfilePic} alt="Giuseppe Barbato" />
+          <img className="w-32 h-32 profile-pic rounded-full mx-auto" src={ProfilePic} alt="Giuseppe Barbato" />
           <div className="text-5xl md:text-7xl md:ml-6 italic font-semibold hero-title">Giuseppe Barbato</div>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

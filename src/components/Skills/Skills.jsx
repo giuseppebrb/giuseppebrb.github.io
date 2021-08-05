@@ -27,7 +27,15 @@ const Skills = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Skills" />
-          <p className="mb-4">Technologies and languages I played and worked with in these years.</p>
+          <Fade
+            right={isDesktop}
+            bottom={isMobile}
+            duration={1000}
+            delay={1000}
+            distance="30px"
+          >
+            <p className="react-reveal mb-4">Technologies and languages I played and worked with in these years.</p>
+          </Fade>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {skills.map(skill => {
                   const { title, img, id } = skill;

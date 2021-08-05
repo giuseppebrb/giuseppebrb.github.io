@@ -36,7 +36,7 @@ const Skills = () => {
           >
             <p className="react-reveal mb-4">Technologies and languages I played and worked with in these years.</p>
           </Fade>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-y-8">
             {skills.map(skill => {
                   const { title, img, id } = skill;
                   return (
@@ -66,7 +66,7 @@ const Skills = () => {
                             <SkillImg alt={title} filename={img} />
                           </div>
                         </Tilt>
-                        <div>{title}</div>
+                        <div className="font-semibold">{title}</div>
                       </div>
                     </Fade>
                   );

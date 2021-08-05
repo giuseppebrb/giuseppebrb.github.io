@@ -136,30 +136,30 @@ export const skillsData = [
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'asp-net-core-api.png',
+    title: 'Aldo Giovanni Giacomo.API',
+    info: 'This is a simple REST API whose purpose is to provide quotes and infos about Aldo, Giovanni e Giacomo.',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/cobidev/react-simplefolio',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'covid-dashboard.jpg',
+    title: 'COVID-19 Italian Dashboard',
+    info: 'A flutter application that monitors the trend of COVID-19 in Italy.',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/giuseppebrb/COVID-19_Italian_Dashboard',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'ardutooth.jpg',
+    title: 'Ardutooth',
+    info: 'A lightweight .aar library to create easily a stable bluetooth connection between Android and Arduino.',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/giuseppebrb/Ardutooth',
   },
 ];
 

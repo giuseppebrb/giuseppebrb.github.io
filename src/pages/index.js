@@ -15,6 +15,7 @@ export default () => {
         <title>Giuseppe Barbato | Passionate Software Engineer</title>
         <html lang='en' />
         <meta name="description" content='Passionate software engineer, who loves to build meaningful software' />
+        <meta name="theme-color" content="#234e70" />
       </Helmet>
       <App />
     </>

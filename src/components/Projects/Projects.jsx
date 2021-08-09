@@ -31,7 +31,7 @@ const Projects = () => {
             left={isDesktop}
             bottom={isMobile}
             duration={1000}
-            delay={500}
+            delay={300}
             distance="30px"
           >
             <p>Latest projects published on GitHub.</p>
@@ -46,7 +46,7 @@ const Projects = () => {
                     left={isDesktop}
                     bottom={isMobile}
                     duration={1000}
-                    delay={500}
+                    delay={400}
                     distance="30px"
                   >
                     <div className="project-wrapper__text">
@@ -73,7 +73,7 @@ const Projects = () => {
                     right={isDesktop}
                     bottom={isMobile}
                     duration={1000}
-                    delay={1000}
+                    delay={450}
                     distance="30px"
                   >
                     <div className="project-wrapper__image">

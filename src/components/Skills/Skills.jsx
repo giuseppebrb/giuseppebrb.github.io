@@ -31,7 +31,7 @@ const Skills = () => {
             right={isDesktop}
             bottom={isMobile}
             duration={1000}
-            delay={1000}
+            delay={300}
             distance="30px"
           >
             <p className="react-reveal mb-4">Technologies and languages I played and worked with in these years.</p>
@@ -45,7 +45,7 @@ const Skills = () => {
                       right={isDesktop}
                       bottom={isMobile}
                       duration={1000}
-                      delay={1000}
+                      delay={400}
                       distance="30px"
                     >
                       <div>

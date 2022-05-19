@@ -22,6 +22,13 @@ const About = () => {
     }
   }, []);
 
+  function getYears() {
+    let birthDate = new Date(1995, 4, 15);
+    var ageDifMs = Date.now() - birthDate;
+    var ageDate = new Date(ageDifMs);
+    return ageDate.getUTCFullYear() - 1970;
+  }
+
   return (
     <section id="about">
       <Container>
@@ -37,25 +44,37 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={400} distance="30px">
               <div className="about-wrapper__info">
-                <pre className="code-block"><code>Hello World!</code></pre>
+                <pre className="code-block">
+                  <code>Hello World!</code>
+                </pre>
                 <p className="about-wrapper__info-text">
-                  My name is <b>Giuseppe Barbato</b>, I am a <b>26 years old software engineer</b> from Bari, Italy.
+                  My name is <b>Giuseppe Barbato</b>, I am a{' '}
+                  <b>{getYears()} years old software engineer</b> from Bari, Italy.
                 </p>
                 <p className="about-wrapper__info-text">
-                  I <i>love</i> building <b>efficient, clean and reliable software</b> since my early years and, because of that, I turned <b>hundreds of hours of studying</b> code-related material into my job.
-                  <br />
-                  I always learn new <i>technologies, frameworks and methodologies</i>.
+                  I <i>love</i> building <b>efficient, clean and reliable software</b> since my
+                  early years and, because of that, I turned <b>hundreds of hours of studying</b>{' '}
+                  code-related material into my job.
+                  <br />I always learn new <i>technologies, frameworks and methodologies</i>.
                   <br />
                   The software engineering world runs fast but I keep up the pace!
                 </p>
                 <p className="about-wrapper__info-text">
-                  In 2018 <b>I graduated in Computer Science</b> and started working for a corporation in the <i>banking business area</i>.
+                  In 2018 <b>I graduated in Computer Science</b> and started working for a
+                  corporation in the <i>banking business area</i>.
                 </p>
                 <p className="about-wrapper__info-text">
-                  I currently work as consultant for a <i>world-known group</i>, developing an Enterprise Software used by <b>20.000+ professionals <i>in the legal sector</i></b>.
+                  Previoulsy, I worked as consultant for a <i>world-known group</i>, developing an
+                  Enterprise Software used by{' '}
+                  <b>
+                    20.000+ professionals <i>in the legal sector</i>
+                  </b>
+                  . At the moment, I work for a platform of decision making automation based on
+                  Machine Learning.
                 </p>
                 <p className="about-wrapper__info-text">
-                  I am used to work with <b>AGILE methodology</b> and I cover the role of <b>Scrum Master</b> in my team.
+                  I am used to work with <b>AGILE methodology</b> and I cover the role of{' '}
+                  <b>Scrum Master</b> in my team.
                 </p>
                 {/* {resume && (
                   <span className="d-flex mt-3">

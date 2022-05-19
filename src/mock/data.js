@@ -20,7 +20,7 @@ export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: '',
   paragraphTwo: '',
-  paragraphThree: ''
+  paragraphThree: '',
 };
 
 // SKILLS DATA
@@ -129,7 +129,7 @@ export const skillsData = [
     id: nanoid(),
     img: 'wordpress-logo.png',
     title: 'Wordpress',
-  }
+  },
 ];
 
 // PROJECTS DATA
@@ -140,7 +140,7 @@ export const projectsData = [
     title: 'Aldo Giovanni Giacomo.API',
     info: 'This is a simple REST API whose purpose is to provide quotes and infos about Aldo, Giovanni e Giacomo.',
     info2: '',
-    url: '',
+    url: 'https://github.com/cobidev/react-simplefolio',
     repo: 'https://github.com/cobidev/react-simplefolio',
   },
   {
@@ -149,7 +149,7 @@ export const projectsData = [
     title: 'COVID-19 Italian Dashboard',
     info: 'A flutter application that monitors the trend of COVID-19 in Italy.',
     info2: '',
-    url: '',
+    url: 'https://github.com/giuseppebrb/COVID-19_Italian_Dashboard',
     repo: 'https://github.com/giuseppebrb/COVID-19_Italian_Dashboard',
   },
   {
@@ -158,7 +158,7 @@ export const projectsData = [
     title: 'Ardutooth',
     info: 'A lightweight .aar library to create easily a stable bluetooth connection between Android and Arduino.',
     info2: '',
-    url: '',
+    url: 'https://github.com/giuseppebrb/Ardutooth',
     repo: 'https://github.com/giuseppebrb/Ardutooth',
   },
 ];

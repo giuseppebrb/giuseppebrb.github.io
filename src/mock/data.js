@@ -136,6 +136,15 @@ export const skillsData = [
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'brain-tumor-detection.jpg',
+    title: 'Brain Tumor Detection',
+    info: 'Brain tumor detection models created using PyTorch and YOLOv5 and Azure Cognitive Services. ',
+    info2: '',
+    url: 'https://github.com/giuseppebrb/BrainTumorDetection',
+    repo: 'https://github.com/giuseppebrb/BrainTumorDetection',
+  },
+  {
+    id: nanoid(),
     img: 'asp-net-core-api.png',
     title: 'Aldo Giovanni Giacomo.API',
     info: 'This is a simple REST API whose purpose is to provide quotes and infos about Aldo, Giovanni e Giacomo.',

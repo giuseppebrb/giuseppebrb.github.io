@@ -69,12 +69,23 @@ const About = () => {
                   <b>
                     20.000+ professionals <i>in the legal sector</i>
                   </b>
-                  . At the moment, I work for a platform of decision making automation based on
-                  Machine Learning.
+                  .
+                  <br />
+                  <br />
+                  <b>At the moment</b>, I work at{' '}
+                  <a href="https://altilia.ai" target="_blank">
+                    Altilia
+                  </a>{' '}
+                  building an automated document processing platform based on Artificial
+                  Intelligence.
+                  <br />
+                  In 2022, I attended an{' '}
+                  <b>Executive Master at GSOM (Graduated School of Management)</b> by Milan
+                  Polythecnic in <i>"Data Science and Business Analytics"</i>.
                 </p>
                 <p className="about-wrapper__info-text">
-                  I am used to work with <b>AGILE methodology</b> and I cover the role of{' '}
-                  <b>Scrum Master</b> in my team.
+                  <br />I am used to work with <b>AGILE methodology</b>, previously I covered the
+                  role of <b>Scrum Master</b> and now I am <b>Fronted Tech Lead</b>.
                 </p>
                 {/* {resume && (
                   <span className="d-flex mt-3">

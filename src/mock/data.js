@@ -149,8 +149,8 @@ export const projectsData = [
     title: 'Aldo Giovanni Giacomo.API',
     info: 'This is a simple REST API whose purpose is to provide quotes and infos about Aldo, Giovanni e Giacomo.',
     info2: '',
-    url: 'https://github.com/cobidev/react-simplefolio',
-    repo: 'https://github.com/cobidev/react-simplefolio',
+    url: 'https://github.com/giuseppebrb/AldoGiovanniGiacomo.API',
+    repo: 'https://github.com/giuseppebrb/AldoGiovanniGiacomo.API',
   },
   {
     id: nanoid(),
